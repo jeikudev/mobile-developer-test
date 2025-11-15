@@ -132,7 +132,7 @@ npx eas build --platform android --profile production
 
 **Download Link:** [https://tinyurl.com/mobile-dev-test](https://tinyurl.com/mobile-dev-test)
 
-### Option 2: Scan QR Code with Expo Go
+<!-- ### Option 2: Scan QR Code with Expo Go
 
 1. Install **Expo Go** app from Play Store/App Store
 2. Scan the QR code below:
@@ -165,7 +165,7 @@ npx eas build --platform android --profile production
 1. **For APK**: Download and install the APK file on your Android device
 2. **For Expo Go**: Scan the QR code with Expo Go app
 3. Allow installation from unknown sources if prompted (for APK)
-4. Open the app and grant necessary permissions when requested
+4. Open the app and grant necessary permissions when requested -->
 
 ### System Requirements:
 
