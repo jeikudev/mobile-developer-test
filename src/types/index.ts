@@ -1,15 +1,28 @@
-export type SubmitResponse = {
-  status: string;
-  message?: string;
-};
-
-export type RetrieveItem = {
+export interface RetrieveItem {
   text: string;
   image_base64: string;
-  created_at?: string;
-};
+  created_at: string;
+}
 
-export type RetrieveResponse = {
-  status: string;
+export interface ApiResponse<T = any> {
+  status: "success" | "error";
+  data?: T;
+  message?: string;
+}
+
+export interface SubmitPayload {
+  user: string;
+  text: string;
+  file: string;
+}
+
+export interface SubmitResponse extends ApiResponse {
+  status: "success" | "error";
+  message: string;
+}
+
+export interface RetrieveResponse extends ApiResponse<RetrieveItem[]> {
   data: RetrieveItem[];
-};
+  status: "success" | "error";
+  message?: string;
+}
