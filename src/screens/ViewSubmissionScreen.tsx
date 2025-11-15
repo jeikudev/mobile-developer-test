@@ -1,13 +1,12 @@
-import React from "react";
 import {
   ActivityIndicator,
-  Button,
   Image,
   ScrollView,
   StyleSheet,
   Text,
   View,
 } from "react-native";
+import Button from "../components/button";
 import { useRetrieve } from "../hooks/useRetrieve";
 
 export default function ViewSubmissionScreen() {

@@ -6,25 +6,49 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.jeikudev.mobiledevtest",
+      "versionCode": 2,
+      "usesCleartextTraffic": true,
+      "networkSecurityConfig": "res/xml/network_security_config.xml",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "networkSecurityConfig": "res/xml/network_security_config.xml"
+          }
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c37c9178-d18c-4886-953e-cb6a528352c7"
+      },
+      "apiBase": "http://35.88.88.102:9000"
     }
   }
 }
